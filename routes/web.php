@@ -8,6 +8,7 @@ use App\Http\Controllers\MyBlogsController;
 use App\Http\Controllers\CreateBlogController;
 use App\Http\Controllers\FeedController;
 use App\Http\Controllers\AboutMeController;
+use App\Http\Controllers\RegistrarController;
 // 1) Ruta raíz disponible para todos
 Route::get('/', [IndexController::class, 'index'])->name('inicio');
 
@@ -21,7 +22,7 @@ Route::get('/login', function () {
 Route::post('/login', [LoginController::class, 'login'])->name('login.attempt');
 
 // 3) Registro y logout
-Route::post('/registrar', [LoginController::class, 'registrar'])->name('registrar');
+Route::get('/registrar', [RegistrarController::class, 'index'])->name('registrar');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 // 4) Rutas públicas

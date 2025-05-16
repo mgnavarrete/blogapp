@@ -1,10 +1,12 @@
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-<style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap" rel="stylesheet"><style>
     .side-menu__item {
         display: flex;
         align-items: center;
-        font-family: 'Playfair Display', serif;
-        font-weight: 700;
+        font-family: "Tagesschrift", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 500;
     }
     .side-menu__icon {
         display: flex;
@@ -12,8 +14,14 @@
         margin-right: 10px;
     }
     .side-menu__label {
-        font-family: 'Playfair Display', serif;
-        font-weight: 700;
+        font-family: "Tagesschrift", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 500;
+    }
+    .category-name {
+        font-family: "Tagesschrift", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 500;
     }
 </style>
 <aside class="app-sidebar sticky" id="sidebar" >

@@ -56,7 +56,7 @@
                 @else
                 <div class="d-flex align-items-center">
                     <a href="{{route('login')}}" class="btn btn-primary me-2">Ingresar</a>
-                    <a href="{{route('login')}}" class="btn btn-outline-primary">Registrarse</a>
+                    <a href="{{route('registrar')}}" class="btn btn-outline-primary">Registrate</a>
                 </div>
                 @endauth
             </div>  

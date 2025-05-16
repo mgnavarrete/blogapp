@@ -67,9 +67,7 @@
                                         </div>
                                         <div class="mt-2">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                                <label class="form-check-label text-muted fw-normal" for="defaultCheck1">
-                                                    ¿Recordar contraseña?
+                                                <a href="{{route('registrar')}}" class="btn btn-outline-primary">Registrarse</a>
                                                 </label>
                                             </div>
                                         </div>
