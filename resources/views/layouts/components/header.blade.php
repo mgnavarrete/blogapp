@@ -39,20 +39,26 @@
             <!-- Start::header-element -->
             <div class="header-element">
                 <!-- Start::header-link|dropdown-toggle -->
+                @auth
                 <a href="javascript:void(0);" class="header-link dropdown-toggle" id="mainHeaderProfile" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                     <div class="d-flex align-items-center">
                         <img src="{{asset('build/assets/images/style/profile.png')}}" alt="img" width="32" height="32" class="rounded-circle me-2">
-
                         <div class="d-sm-block d-none">
-                         
+                            {{ auth()->user()->name }}
                         </div>
                     </div>
                 </a>
                 <!-- End::header-link|dropdown-toggle -->
                 <ul class="main-header-dropdown dropdown-menu pt-0 overflow-hidden header-profile-dropdown dropdown-menu-end" aria-labelledby="mainHeaderProfile">
-                    {{-- <li><a class="dropdown-item d-flex" href="{{route('perfil.index')}}"><i class="ti ti-user-circle fs-18 me-2 op-7"></i>Perfil</a></li> --}}
+                    <li><a class="dropdown-item d-flex" href="{{route('profile')}}"><i class="ti ti-user-circle fs-18 me-2 op-7"></i>Perfil</a></li>
                     <li><a class="dropdown-item d-flex" href="{{route('logout')}}"><i class="ti ti-logout fs-18 me-2 op-7"></i>Cerrar Sesión</a></li>
                 </ul>
+                @else
+                <div class="d-flex align-items-center">
+                    <a href="{{route('login')}}" class="btn btn-primary me-2">Ingresar</a>
+                    <a href="{{route('login')}}" class="btn btn-outline-primary">Registrarse</a>
+                </div>
+                @endauth
             </div>  
             <!-- End::header-element -->
         </div>

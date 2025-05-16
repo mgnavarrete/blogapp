@@ -39,7 +39,7 @@
                 
                 <!-- Start::slide -->
                 <li class="slide" >
-                    <a href="{{url('/feed')}}" class="side-menu__item">
+                    <a href="{{url('/aboutme')}}" class="side-menu__item">
                         <img src="{{asset('build/assets/images/brand-logos/toggle-logo.png')}}" alt="logo" class="side-menu__icon" style="width: 24px; height: 24px; margin-right: 16px;">
                         <span class="side-menu__label fs-5" style="color: #BD4637;">Sobre mi</span>
                     </a>
