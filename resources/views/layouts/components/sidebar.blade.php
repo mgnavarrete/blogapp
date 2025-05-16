@@ -1,12 +1,19 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <style>
     .side-menu__item {
         display: flex;
         align-items: center;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
     }
     .side-menu__icon {
         display: flex;
         align-items: center;
         margin-right: 10px;
+    }
+    .side-menu__label {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
     }
 </style>
 <aside class="app-sidebar sticky" id="sidebar" >
