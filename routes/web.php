@@ -22,11 +22,10 @@ use App\Http\Controllers\FeedController;
 
 // RUTAS PÚBLICAS //
 Route::get('/', function () {
-    if (auth()->check()) {
-        return redirect()->route('index');
-    }
     return view('pages.inicio');
 })->name('inicio');
+
+Route::get('/feed', [FeedController::class, 'index'])->name('feed');
 
 // RUTAS DE AUTENTICACIÓN //
 Route::post('/registrar', [LoginController::class, 'registrar'])->name('registrar');
@@ -39,5 +38,4 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
     Route::get('/myblogs', [MyBlogsController::class, 'index'])->name('myBlogs');
     Route::get('/createblog', [CreateBlogController::class, 'index'])->name('createBlog');
-    Route::get('/feed', [FeedController::class, 'index'])->name('feed');
 });

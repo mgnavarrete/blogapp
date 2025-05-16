@@ -19,6 +19,17 @@
             vertical-align: middle;
             display: inline-block;
         }
+
+        body {
+            background-image: url('{{asset('build/assets/images/style/wp2.png')}}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
     </style>
 @endsection
 

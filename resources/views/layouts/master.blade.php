@@ -12,7 +12,7 @@
         <meta name="keywords" content="dashboard bootstrap, laravel template, admin panel in laravel, php admin panel, admin panel for laravel, admin template bootstrap 5, laravel admin panel, admin dashboard template, hrm dashboard, vite laravel, admin dashboard, ecommerce admin dashboard, dashboard laravel, analytics dashboard, template dashboard, admin panel template, bootstrap admin panel template">
         
         <!-- TITLE -->
-		<title> Minttu | Blog </title>
+		<title> Flo | Blog </title>
 
         <!-- FAVICON -->
         <link rel="icon" href="{{asset('build/assets/images/brand-logos/favicon.png')}}" type="image/x-icon">
@@ -51,7 +51,7 @@
 		<!-- END LOADER -->
 
         <!-- PAGE -->
-		<div class="page">
+		<div class="page" >
 
             <!-- HEADER -->
 
@@ -67,7 +67,7 @@
 
             <!-- MAIN-CONTENT -->
 
-            <div class="main-content app-content">
+            <div class="main-content app-content" style="background-image: url('{{asset('build/assets/images/style/wp2.png')}}'); background-size: cover; background-position: center; background-repeat: no-repeat; opacity: 1; z-index: -1;">
 
                 @yield('content')
 
@@ -82,7 +82,7 @@
 
             <!-- FOOTER -->
             
-            @include('layouts.components.footer')
+
 
             <!-- END FOOTER -->
 

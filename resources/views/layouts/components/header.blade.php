@@ -1,8 +1,8 @@
 
-<header class="app-header">
+<header class="app-header" >
 
     <!-- Start::main-header-container -->
-    <div class="main-header-container container-fluid">
+    <div class="main-header-container container-fluid" style="background-image: url('{{asset('build/assets/images/style/wp2.png')}}'); background-size: cover; background-position: center; background-repeat: no-repeat; opacity: 1; z-index: -1;">
 
         <!-- Start::header-content-left -->
         <div class="header-content-left">
@@ -41,11 +41,10 @@
                 <!-- Start::header-link|dropdown-toggle -->
                 <a href="javascript:void(0);" class="header-link dropdown-toggle" id="mainHeaderProfile" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                     <div class="d-flex align-items-center">
-                        <img src="https://laravelui.spruko.com/ynex/build/assets/images/faces/21.jpg" alt="img" width="32" height="32" class="rounded-circle me-2">
+                        <img src="{{asset('build/assets/images/style/profile.png')}}" alt="img" width="32" height="32" class="rounded-circle me-2">
 
                         <div class="d-sm-block d-none">
-                            <p class="fw-semibold mb-0 lh-1">@auth{{Auth::user()->first_name}}@endauth @auth{{Auth::user()->last_name}}@endauth</p>
-                            <span class="op-7 fw-normal d-block fs-11">@auth{{Auth::user()->profession}}@endauth</span>
+                         
                         </div>
                     </div>
                 </a>

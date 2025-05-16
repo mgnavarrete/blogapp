@@ -12,8 +12,8 @@
                     <!-- Start::row -->
                     <div class="row">
                         <div class="col-xxl-12 col-xl-12 ">
-                            <div class="card custom-card overlay-card" style="height: 500px;"> 
-                                <img src="https://laravelui.spruko.com/ynex/build/assets/images/media/media-34.jpg" class="card-img" alt="...">
+                            <div class="card custom-card overlay-card" style="height: 400px;"> 
+                                <img src="https://laravelui.spruko.com/ynex/build/assets/images/media/media-31.jpg" class="card-img" alt="...">
                                 <div class="card-img-overlay d-flex flex-column p-0">
                                     
                                 </div>

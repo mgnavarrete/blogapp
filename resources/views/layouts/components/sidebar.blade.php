@@ -25,7 +25,7 @@
     <!-- End::main-sidebar-header -->
     
     <!-- Start::main-sidebar -->
-    <div class="main-sidebar" id="sidebar-scroll">
+    <div class="main-sidebar" id="sidebar-scroll" >
     
         <!-- Start::nav -->
         <nav class="main-menu-container nav nav-pills flex-column sub-open " >
@@ -40,24 +40,24 @@
                 <!-- Start::slide -->
                 <li class="slide" >
                     <a href="{{url('/feed')}}" class="side-menu__item">
-                        <i class="bi bi-flower3 text-primary side-menu__icon fs-2 me-4"></i>
-                        <span class="side-menu__label fs-5 text-primary">Sobre mi</span>
+                        <img src="{{asset('build/assets/images/brand-logos/toggle-logo.png')}}" alt="logo" class="side-menu__icon" style="width: 24px; height: 24px; margin-right: 16px;">
+                        <span class="side-menu__label fs-5" style="color: #BD4637;">Sobre mi</span>
                     </a>
                 </li>
 
                 <!-- Start::slide -->
                 <li class="slide" >
                     <a href="{{url('/feed')}}" class="side-menu__item">
-                        <i class="bi bi-flower3 text-primary side-menu__icon fs-2 me-4"></i>
-                        <span class="side-menu__label fs-5 text-primary">Explorar</span>
+                        <img src="{{asset('build/assets/images/brand-logos/toggle-logo.png')}}" alt="logo" class="side-menu__icon" style="width: 24px; height: 24px; margin-right: 16px;">
+                        <span class="side-menu__label fs-5" style="color: #BD4637;">Explorar</span>
                     </a>
                 </li>
                 <!-- End::slide -->
     
                 <li class="slide" >
                     <a href="{{url('/myblogs')}}" class="side-menu__item">
-                        <i class="bi bi-flower3 text-primary side-menu__icon fs-2 me-4"></i>
-                        <span class="side-menu__label fs-5 text-primary">Mis Blogs</span>
+                        <img src="{{asset('build/assets/images/brand-logos/toggle-logo.png')}}" alt="logo" class="side-menu__icon" style="width: 24px; height: 24px; margin-right: 16px;">
+                        <span class="side-menu__label fs-5" style="color: #BD4637;">Mis Blogs</span>
                     </a>
                 </li>
                 <!-- End::slide -->
@@ -65,8 +65,8 @@
                 <li class="slide" >
                     <!-- Alertas -->
                     <a href="{{url('/createblog')}}" class="side-menu__item">
-                        <i class="bi bi-flower3 text-primary side-menu__icon fs-2 me-4"></i>
-                        <span class="side-menu__label fs-5 text-primary" >Escribir Blog</span>
+                        <img src="{{asset('build/assets/images/brand-logos/toggle-logo.png')}}" alt="logo" class="side-menu__icon" style="width: 24px; height: 24px; margin-right: 16px;">
+                        <span class="side-menu__label fs-5" style="color: #BD4637;">Escribir Blog</span>
                     </a>
                 </li>
                 <!-- End::slide -->
