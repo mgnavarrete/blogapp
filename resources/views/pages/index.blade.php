@@ -13,7 +13,7 @@
                     <div class="row">
                         <div class="col-xxl-12 col-xl-12 ">
                             <div class="card custom-card overlay-card" style="height: 400px;"> 
-                                <img src="https://laravelui.spruko.com/ynex/build/assets/images/media/media-31.jpg" class="card-img" alt="...">
+                                <img src="https://laravelui.spruko.com/ynex/build/assets/images/media/media-31.jpg" class="card-img h-100 w-100 object-fit-cover" alt="...">
                                 <div class="card-img-overlay d-flex flex-column p-0">
                                     
                                 </div>
