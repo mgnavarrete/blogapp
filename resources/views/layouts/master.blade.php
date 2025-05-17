@@ -70,7 +70,8 @@
             <div class="main-content app-content" style="background-image: url('{{asset('build/assets/images/style/wp2.png')}}'); background-size: cover; background-position: center; background-repeat: no-repeat; opacity: 1; z-index: -1;">
 
                 @yield('content')
-
+                {{-- Mostrar mensaje de éxito --}}
+           
             </div> 
             <!-- END MAIN-CONTENT -->
 

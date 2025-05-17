@@ -88,10 +88,10 @@
                             <img src="{{asset('build/assets/images/brand-logos/desktop-dark.png')}}" alt="logo" class="desktop-dark" style="width: 300px; height: auto;">
                         </a>
                     </div>
-                    <div class="card custom-card">
+                    <div class="card custom-card" style="background-color: #FFEBE5;">
                         <div class="card-body p-5">
-                            <p class="h5 fw-semibold mb-2 text-center">Iniciar Sesión</p>
-                            <p class="mb-4 text-muted op-7 fw-normal text-center">¡Bienvenido!</p>
+                            <p class="h5 fw-semibold mb-2 text-center text-primary">Iniciar Sesión</p>
+                            <p class="mb-4 text-muted op-7 fw-normal text-center">¡Bienvenida!</p>
                             <div class="row gy-3">
                                 <form method="POST" action="{{ route('login') }}" id="formInicio">
                                     @csrf
@@ -129,7 +129,18 @@
                 </div>
             </div>
         </div>
+@if(session('success'))
+<script>
+    alert("{{ session('success') }}");
+</script>
+@endif
 
+{{-- Mostrar mensaje de error --}}
+@if($errors->any())
+<script>
+    alert("{{ $errors->first() }}");
+</script>
+@endif
 @endsection
 
 @section('scripts')

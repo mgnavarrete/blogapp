@@ -46,7 +46,7 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
             border: none;
             backdrop-filter: blur(10px);
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: #FFEBE5;
         }
 
         .form-label, .form-control, .btn, p, h5 {
@@ -83,7 +83,7 @@
                             <img src="{{asset('build/assets/images/brand-logos/desktop-dark.png')}}" alt="logo" class="desktop-dark" style="width: 300px; height: auto;">
                         </a>
                     </div>
-                    <div class="card custom-card">
+                    <div class="card custom-card" style="background-color: #FFEBE5;">
                         <div class="card-body p-5">
                             <p class="h5 fw-semibold mb-2 text-center text-primary">Registrate</p>
                             <p class="mb-4 text-muted op-7 fw-normal text-center">¡Bienvenida! Únete a nuestra comunidad</p>
@@ -97,18 +97,12 @@
                                                 <label for="username" class="form-label text-default text-primary">Nombre de Usuario</label>
                                                 <input type="text" class="form-control form-control-lg" id="username" name="username" placeholder="Nombre de Usuario" required>
                                             </div>
-                                            <div class="col-xl-12">
-                                                <label for="email" class="form-label text-default text-primary">Correo Electrónico</label>
-                                                <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Correo Electrónico" required>
-                                            </div>
+                                            
                                             <div class="col-xl-12">
                                                 <label for="first_name" class="form-label text-default text-primary">Nombre</label>
                                                 <input type="text" class="form-control form-control-lg" id="first_name" name="first_name" placeholder="Nombre" required>
                                             </div>
-                                            <div class="col-xl-12">
-                                                <label for="last_name" class="form-label text-default text-primary">Apellidos</label>
-                                                <input type="text" class="form-control form-control-lg" id="last_name" name="last_name" placeholder="Apellidos" required>
-                                            </div>
+                                            
                                             <div class="col-xl-12">
                                                 <label for="gender" class="form-label text-default text-primary">Género</label>
                                                 <select class="form-control form-control-lg" id="gender" name="gender" required>
@@ -118,11 +112,35 @@
                                                     <option value="otro">Otro</option>
                                                 </select>
                                             </div>
+                                            <div class="col-xl-12">
+                                                <label for="password" class="form-label text-default text-primary">Contraseña</label>
+                                                <div class="input-group">
+                                                    <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Contraseña" required>
+                                                    <button class="btn btn-light" onclick="createpassword('password',this)" type="button" id="button-addon2"><i class="ri-eye-off-line align-middle"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <label for="password_confirmation" class="form-label text-default text-primary">Confirmar Contraseña</label>
+                                                <div class="input-group">
+                                                    <input type="password" class="form-control form-control-lg" id="password_confirmation" name="password_confirmation" placeholder="Confirmar Contraseña" required>
+                                                    <button class="btn btn-light" onclick="createpassword('password_confirmation',this)" type="button" id="button-addon21"><i class="ri-eye-off-line align-middle"></i></button>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                     <!-- Columna Derecha -->
                                     <div class="col-xl-6">
                                         <div class="row gy-3">
+                                            <div class="col-xl-12">
+                                                <label for="email" class="form-label text-default text-primary">Correo Electrónico</label>
+                                                <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Correo Electrónico" required>
+                                            </div>
+                                            <div class="col-xl-12">
+                                                <label for="last_name" class="form-label text-default text-primary">Apellidos</label>
+                                                <input type="text" class="form-control form-control-lg" id="last_name" name="last_name" placeholder="Apellidos" required>
+                                            </div>
+
                                             <div class="col-xl-12">
                                                 <label for="birthdate" class="form-label text-default text-primary">Fecha de Nacimiento</label>
                                                 <input type="date" class="form-control form-control-lg" id="birthdate" name="birthdate" required>
@@ -133,31 +151,15 @@
                                             </div>
                                             <div class="col-xl-12">
                                                 <label for="bio" class="form-label text-default text-primary">Biografía</label>
-                                                <textarea class="form-control form-control-lg" id="bio" name="bio" rows="3" placeholder="Cuéntame sobre ti" required></textarea>
+                                                <textarea class="form-control form-control-lg" id="bio" name="bio" rows="1" placeholder="Cuéntame sobre ti" required></textarea>
                                             </div>
-                                            <div class="col-xl-12">
-                                                <label for="profile_image" class="form-label text-default text-primary">Foto de Perfil</label>
-                                                <input type="file" class="form-control form-control-lg" id="profile_image" name="profile_image" accept="image/*" required>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                     <!-- Campos de Contraseña (Ancho Completo) -->
                                     <div class="col-xl-12">
                                         <div class="row gy-3">
-                                            <div class="col-xl-6">
-                                                <label for="password" class="form-label text-default text-primary">Contraseña</label>
-                                                <div class="input-group">
-                                                    <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Contraseña" required>
-                                                    <button class="btn btn-light" onclick="createpassword('password',this)" type="button" id="button-addon2"><i class="ri-eye-off-line align-middle"></i></button>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                                <label for="password_confirmation" class="form-label text-default text-primary">Confirmar Contraseña</label>
-                                                <div class="input-group">
-                                                    <input type="password" class="form-control form-control-lg" id="password_confirmation" name="password_confirmation" placeholder="Confirmar Contraseña" required>
-                                                    <button class="btn btn-light" onclick="createpassword('password_confirmation',this)" type="button" id="button-addon21"><i class="ri-eye-off-line align-middle"></i></button>
-                                                </div>
-                                            </div>
+                                            
                                         </div>
                                     </div>
 
@@ -177,7 +179,18 @@
                 </div>
             </div>
         </div>
+    @if(session('success'))
+    <script>
+        alert("{{ session('success') }}");
+    </script>
+    @endif
 
+    {{-- Mostrar mensaje de error --}}
+    @if($errors->any())
+    <script>
+        alert("{{ $errors->first() }}");
+    </script>
+    @endif
 @endsection
 
 @section('scripts')

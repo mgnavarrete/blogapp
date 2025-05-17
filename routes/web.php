@@ -25,7 +25,7 @@ Route::post('/login', [LoginController::class, 'login'])->name('login.attempt');
 // 3) Registro y logout
 Route::get('/registrar', [RegistrarController::class, 'index'])->name('registrar');
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-Route::post('/createuser', [UserController::class, 'create'])->name('create');
+Route::post('/createuser', [UserController::class, 'create'])->name('createuser');
 
 // 4) Rutas públicas
 Route::get('/index',   [IndexController::class, 'index'])->name('index');

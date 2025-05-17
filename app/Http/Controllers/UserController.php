@@ -13,14 +13,14 @@ class UserController extends Controller
         $validatedData = $request->validate([
             'username' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email',
-            'password' => 'required|string|min:8|confirmed',
+            'password' => 'required|string|confirmed',
             'first_name' => 'required|string|max:255',
             'last_name' => 'required|string|max:255',
             'gender' => 'required|string|max:255',
             'birthdate' => 'required|date',
             'profession' => 'required|string|max:255',
             'bio' => 'required|string|max:255',
-            'profile_image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+
 
         ]);
 
@@ -46,7 +46,7 @@ class UserController extends Controller
                 'birthdate' => $validatedData['birthdate'],
                 'profession' => $validatedData['profession'],
                 'bio' => $validatedData['bio'],
-                'profile_image' => $path,
+
             ]);
         } catch (\Exception $e) {
             logger()->error('User creation error: ' . $e->getMessage()); // Log the error
