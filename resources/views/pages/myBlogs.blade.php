@@ -8,12 +8,23 @@
 @section('content')
 
                 <div class="container-lg my-5">
-
+                    <!-- Page Header -->
+                    <div class="d-md-flex d-block align-items-center justify-content-between my-4 page-header-breadcrumb">
+                                <h1 class="mb-0 fw-semibold text-primary">Mis Blogs</h1>
+                                <div class="ms-md-1 ms-0">
+                            <nav>
+                                <ol class="breadcrumb mb-0">
+                                    <li class="breadcrumb-item"><a href="javascript:void(0);">Páginas</a></li>
+                                    <li class="breadcrumb-item active text-secondary" aria-current="page">Mis Blogs</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
                     <!-- Start::row -->
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h5 class="mb-0 fw-semibold text-primary" style="font-size: 50px;">Mis Blogs</h5>
+                             
                                
                             </div>
                             <div class="row">
