@@ -52,6 +52,7 @@ class UserController extends Controller
             logger()->error('User creation error: ' . $e->getMessage()); // Log the error
             return redirect()->back()->withInput()->withErrors(['error' => 'Error al crear el usuario. Favor intenta de nuevo.']);
         }
+        return redirect()->route('inicio')->with('success', 'Usuario creado correctamente, por favor inicia sesión');
     }
 
     public function eliminarUsuario($id)

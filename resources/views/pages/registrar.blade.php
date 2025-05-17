@@ -87,7 +87,7 @@
                         <div class="card-body p-5">
                             <p class="h5 fw-semibold mb-2 text-center text-primary">Registrate</p>
                             <p class="mb-4 text-muted op-7 fw-normal text-center">¡Bienvenida! Únete a nuestra comunidad</p>
-                            <form action="" method="POST" enctype="multipart/form-data">
+                            <form action="{{ route('createuser') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="row gy-3">
                                     <!-- Columna Izquierda -->

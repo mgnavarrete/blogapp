@@ -21,9 +21,9 @@
                         </div>
                         <div class="col-xl-12">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h5 class="mb-0 fw-semibold">Mis Blogs</h5>
+                                <h5 class="mb-0 fw-semibold text-primary">Mis Blogs</h5>
                                 <p class="mb-0 fw-semibold">
-                                    <a href="javascript:void(0);" class="text-primary"><u>Ver todos</u></a>
+                                    <a href="{{url('myBlogs')}}" class="text-primary"><u>Ver todos</u></a>
                                 </p>
                             </div>
                             <div class="row">
